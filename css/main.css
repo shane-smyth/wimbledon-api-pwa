@@ -1,0 +1,87 @@
+.ss_header {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+  font-family: 'Arial', sans-serif;
+  padding: 1rem 0; }
+  .ss_headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem; }
+  .ss_header .ss_logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+    .ss_header .ss_logoContainer .ss_logo {
+      height: 50px;
+      width: auto; }
+    .ss_header .ss_logoContainer .ss_headerTitle {
+      font-size: 1.5rem;
+      color: #4b286d;
+      margin: 0;
+      font-weight: 700; }
+  .ss_header .ss_navMenu .ss_navList {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .ss_header .ss_navMenu .ss_navList .ss_navItem.active .ss_navLink {
+      color: #2d8c3c;
+      font-weight: 600; }
+    .ss_header .ss_navMenu .ss_navList .ss_navLink {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s; }
+      .ss_header .ss_navMenu .ss_navList .ss_navLink:hover {
+        color: #4b286d; }
+  .ss_header .ss_mobileMenuButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem; }
+    .ss_header .ss_mobileMenuButton .ss_menuIcon {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: #4b286d;
+      margin: 5px 0;
+      transition: transform 0.3s, opacity 0.3s; }
+  @media (max-width: 768px) {
+    .ss_header .ss_navMenu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: #ffffff;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      transition: right 0.3s ease;
+      z-index: 1000;
+      padding: 2rem;
+      overflow-y: auto; }
+      .ss_header .ss_navMenu.active {
+        right: 0; }
+      .ss_header .ss_navMenu .ss_navList {
+        flex-direction: column;
+        gap: 1.5rem; }
+    .ss_header .ss_mobileMenuButton {
+      display: block;
+      z-index: 1100; }
+      .ss_header .ss_mobileMenuButton.active .ss_menuIcon:nth-child(1) {
+        transform: translateY(7px) rotate(45deg); }
+      .ss_header .ss_mobileMenuButton.active .ss_menuIcon:nth-child(2) {
+        opacity: 0; }
+      .ss_header .ss_mobileMenuButton.active .ss_menuIcon:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg); } }
+
+body {
+  margin: 0; }
+
+/*# sourceMappingURL=main.css.map */
