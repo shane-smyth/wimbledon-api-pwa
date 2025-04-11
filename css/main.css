@@ -81,6 +81,32 @@
       .ss_header .ss_mobileMenuButton.active .ss_menuIcon:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg); } }
 
+.ss_mapGrid {
+  margin: 2rem auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 1rem; }
+  @media (max-width: 1000px) {
+    .ss_mapGrid {
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto auto; } }
+
+.ss_mapContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 80vh;
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 3px solid #4b286d; }
+  @media (max-width: 1000px) {
+    .ss_mapContainer {
+      height: 50vh; } }
+
 body {
   margin: 0; }
 

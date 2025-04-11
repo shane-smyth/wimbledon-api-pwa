@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Wimbledon Tennis Guide</title>
     <meta charset="utf-8">
@@ -22,6 +22,7 @@
 
     <script src="config/apiKeys.js"></script>
     <script src="scripts/responsive.js"></script>
+    <script src="scripts/app.js"></script>
 
 </head>
 <body>
@@ -36,9 +37,6 @@
         <nav class="ss_navMenu">
             <ul class="ss_navList">
                 <li class="ss_navItem active"><a href="#" class="ss_navLink">Home</a></li>
-                <li class="ss_navItem"><a href="#" class="ss_navLink">Matches</a></li>
-                <li class="ss_navItem"><a href="#" class="ss_navLink">Players</a></li>
-                <li class="ss_navItem"><a href="#" class="ss_navLink">Schedule</a></li>
                 <li class="ss_navItem"><a href="#" class="ss_navLink">About</a></li>
             </ul>
         </nav>
@@ -49,11 +47,19 @@
             <span class="ss_menuIcon"></span>
         </button>
     </div>
-    <script src="responsive.js"></script>
+
 </header>
 
 <main>
-
+    <div class="ss_mapGrid">
+        <div id="ss_map" class="ss_mapContainer"></div>
+        <div class="ss_mapControl">
+            <button>button</button>
+            <button>button</button>
+            <button>button</button>
+            <button>button</button>
+        </div>
+    </div>
 </main>
 
 </body>

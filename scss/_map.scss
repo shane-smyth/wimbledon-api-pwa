@@ -1,0 +1,35 @@
+$wimbledon-purple: #4b286d;
+$wimbledon-green: #2d8c3c;
+$shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+.ss_mapGrid {
+  margin: 2rem auto;
+  width: 95%;
+  //border: black solid 1px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 1rem;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto auto;
+  }
+}
+
+
+.ss_mapContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 80vh;
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: $shadow;
+  border: 3px solid $wimbledon-purple;
+
+  @media (max-width: 1000px) {
+    height: 50vh;
+  }
+}
